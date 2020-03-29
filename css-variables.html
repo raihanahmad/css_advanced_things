@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=B">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --primary-width: 1100px;
+            --primary-color: #077;
+            --secondary-color: #055;
+            --light-color: #f4f4f4;
+            --dark-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            padding: 1rem;
+            margin: 1rem 0;
+            text-align: center;
+            border-bottom: solid .4rem var(--secondary-color);
+        }
+
+        .container {
+            display: flex;
+            width: var(--primary-width);
+            margin: auto;
+            --box-size-1: 1;
+            --box-size-2: 2;
+        }
+
+        .box-1 {
+            flex: var(--box-size-1);
+        }
+
+        .box-2 {
+            flex: var(--box-size-2);
+        }
+
+        .box-1, .box-2 {
+            padding: 1rem;
+            margin: 1rem;
+            text-align: center;
+            background: var(--primary-color);
+            color: var(--light-color);
+            border: solid .4rem var(--secondary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Now CSS Variables</h1>
+    </header>
+    <section class="container">
+        <div class="box-1">
+            <h2>I Got Exacly</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure exercitationem eius obcaecati.</p>
+        </div>
+        <div class="box-2">
+            <h2>Noway</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, facere.</p>
+        </div>
+    </section>
+</body>
+</html>

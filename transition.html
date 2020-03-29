@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trasition</title>
+    <style>
+        body {
+            background: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #f00;
+        }
+
+        .box {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            margin: auto;
+            background-color: #055;
+            /* transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s; */
+            transition: all  2s ease-in-out;
+        }
+
+        .box:hover {
+            font-size: 1.4rem;
+            color: white;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h3>Alpha</h3>
+    </div>
+</body>
+</html>

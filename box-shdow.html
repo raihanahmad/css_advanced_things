@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Shadows</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container, .container-2{
+            display: flex;
+        }
+
+        .box {
+            padding: 1rem;
+            margin: 1rem;
+            background-color: #044;
+            text-align: center;
+            color: white;
+        }
+
+        /* box shadow y and x */
+        .container div:first-child{
+            box-shadow: 4px 6px palevioletred;
+        }
+        /* box shadow negative value y and x */
+        .container div:last-child{
+            box-shadow: -4px -6px red;
+        }
+        /* box shadow blur value y and x */
+        .container div:nth-child(2){
+            box-shadow: 5px 7px 10px black;
+        }
+        /* box shadow spread redius value y and x */
+        .container-2 div:nth-child(1){
+            box-shadow: 5px 7px 5px 10px rgba(0, 0, 0, .6);
+        }
+        /* box shadow inset value y and x */
+        .container-2 div:nth-child(2){
+            box-shadow: inset 5px 7px 5px 10px rgba(0, 0, 0, .6);
+        }
+        /* box shadow bouble value y and x */
+        .container-2 div:nth-child(3){
+            box-shadow: 5px 7px blueviolet, -5px -7px green;
+        }
+
+        h1 {
+            font-size: 6rem;
+            text-align: center;
+            text-shadow: 0.5rem 0.5rem fuchsia, 0.9rem 0.9rem green, 1.5rem 1.5rem red, 2rem 2rem 1rem blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Raihan</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim natus ex vero.</p>
+        </div>
+        <div class="box">
+            <h3>Raihan</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim natus ex vero.</p>
+        </div>
+        <div class="box">
+            <h3>Raihan</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim natus ex vero.</p>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="box">
+            <h3>Raihan</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim natus ex vero.</p>
+        </div>
+        <div class="box">
+            <h3>Raihan</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim natus ex vero.</p>
+        </div>
+        <div class="box">
+            <h3>Raihan</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim natus ex vero.</p>
+        </div>
+    </div>
+
+    <h1 class="e" >I'm learning form Brad</h1>
+</body>
+</html>

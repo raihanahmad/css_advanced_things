@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Keyfames</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+        }
+        .box {
+            background-color: #333;
+            position: relative;
+            animation-name: animation-box-1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            /* animation-delay: 5s; */
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes animation-box-1 {
+            from {
+                left: 0;
+                top: 0;
+                width: 1px;
+                height: 1px;
+                border-radius: 50%;
+            }
+
+            to {
+                left: 7rem;
+                top: 7rem;
+                width: 400px;
+                height: 400px;
+                border-radius: none;
+                background-color: greenyellow;
+            }
+        }
+
+        .box-2 {
+            background-color: #333;
+            position: absolute;
+            animation: box2 5s infinite forwards alternate ease-in-out;
+        }
+
+        @keyframes box2 {
+            to {
+                bottom: 0;
+                right: 0;
+                width: 1px;
+                height: 1px;
+            }
+            from {
+                right: 8rem;
+                bottom: 7rem;
+                width: 400px;
+                height: 400px;
+                border-radius: 50%;
+                background-color: rgb(248, 132, 132);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box-2"></div>
+    </div>
+
+</body>
+</html>

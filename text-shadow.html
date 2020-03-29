@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadow</title>
+    <style>
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 3rem;
+        }
+
+        h1[class='a'] {
+            text-shadow: .3rem .2rem blue;
+        }
+
+        div h1:nth-child(2){
+            text-shadow: .3rem .2rem .4rem red;
+        }
+
+        div h1:nth-child(3){
+            color: white;
+            text-shadow: .4rem .4rem .7rem green;
+        }
+
+        div h1:nth-child(4){
+            text-shadow: -0.3rem -0.2rem .4rem fuchsia;
+        }
+
+        div h1:nth-child(5){
+            font-size: 6rem;
+            text-shadow: 0.5rem 0.5rem fuchsia, 0.9rem 0.9rem green, 1.5rem 1.5rem red, 2rem 2rem 1rem blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+    <h1 class="a" >I'm learning form Brad</h1>
+    <h1 class="b" >I'm learning form Brad</h1>
+    <h1 class="c" >I'm learning form Brad</h1>
+    <h1 class="d" >I'm learning form Brad</h1>
+    <h1 class="e" >I'm learning form Brad</h1>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specific Targetor and Selectors</title>
+    <style>
+        div p {
+            background-color: #015;
+            color: #fff;
+        }
+
+        /* Direct Child */
+        div > p {
+            background-color: #055;
+            color: #fff;
+        }
+
+        /* Div after (html tage) */
+        div + p {
+            background-color: #923;
+            color: #fff;
+        }
+
+        /* target by attribite */
+        a[target] {
+            background-color: #039;
+            color: #fff;
+            padding: .4rem;
+        }
+        /* target by attribite way two */
+        a[target='_self'] {
+            background-color: #0a9;
+            color: #fff;
+            padding: .4rem;
+        }
+
+        /* spacific target */
+        input[type='text'],
+        input[type='email'] {
+            margin: 1rem;
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, iste exercitationem!</p>
+
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li><p>item 3</p></li>
+            <li>item 4</li>
+            <li>item 5</li>
+        </ol>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, eius facere.</p>
+    </div>
+
+    <p>Now i change my name my advaced name is Alpha</p>
+
+    <a target="_self" href="#">nowhere</a>
+    <a href="#">also nowhere</a>
+    <a target="_blank" href="http://google.com">google</a>
+
+    <form>
+        <input type="text" placeholder="name">
+        <input type="email" placeholder="email">
+        <input type="submit" value="submit">
+    </form>
+
+</body>
+</html>

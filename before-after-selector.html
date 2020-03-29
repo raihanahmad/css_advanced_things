@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <style>
+        /* form > label:after {
+            content: '*';
+            color: red;
+        } */
+
+        /* form > label:before {
+            content: '*';
+            color: blue;
+        } */
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 3rem;
+
+        }
+
+        header:before {
+            content: ;
+            background: url('https://thumbs.dreamstime.com/b/hammock-beach-marimegmeg-view-bacuit-archipelago-islands-el-nido-philippines-43799440.jpg') no-repeat center center/cover;
+            opacity: .6;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <form>
+        <label class="requared" for="name">Name</label>
+        <input type="text">
+    </form> -->
+
+    <header>
+        <h1>Raihan Ahmad Alpha</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo illum vel sunt? Facilis, ratione.</p>
+    </header>
+
+    <section>
+        <h3>Alpha maaa!</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem cumque eius, quibusdam laborum ad molestias architecto, dicta praesentium cum libero voluptates, obcaecati magnam quasi dignissimos?</p>
+    </section>
+</body>
+</html>
